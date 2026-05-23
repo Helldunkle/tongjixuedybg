@@ -45,17 +45,14 @@ main.py            ← 编排入口
 
 ### 使用方法
 1. 先安装依赖
-<br>
 
-  `pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple`
+>  pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
 2. 运行 main.py 出图像
-<br>
 
-  `python main.py`
+>  python main.py
 3. 运行 _extract_stats.py 出数据报告
 
-<br>
-
-  `python _extract_stats.py`
+>  python _extract_stats.py
 
 
