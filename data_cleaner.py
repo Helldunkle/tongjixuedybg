@@ -1,5 +1,5 @@
 """
-data_cleaner.py — 数据清洗与转换
+数据清洗
 
 清洗流水线：
   1. 删除元数据列
@@ -27,24 +27,12 @@ from config import (
     strip_option_prefix,
 )
 
-# 模块级缓存，用于存储多选题统计结果（避免在 DataFrame 上设置自定义属性）
+# 模块级缓存，用于存储多选题统计结果
 _multi_select_cache: dict = {}
 
 
 def clean_survey_data(df_raw: pd.DataFrame) -> pd.DataFrame:
-    """
-    执行完整的数据清洗流水线。
-
-    Parameters
-    ----------
-    df_raw : pd.DataFrame
-        原始问卷数据。
-
-    Returns
-    -------
-    pd.DataFrame
-        清洗后的 DataFrame。
-    """
+   
     df = df_raw.copy()
 
     # ---- 步骤1: 删除元数据列 ----
